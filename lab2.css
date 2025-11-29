@@ -1,0 +1,80 @@
+/* 1. Перший <li> жирний */
+li:first-child {
+  font-weight: bold;
+}
+
+/* 2. Останні <a> у батьків червоні */
+a:last-child {
+  color: red;
+}
+
+/* 3. Вимкнені input сірий фон */
+input[disabled] {
+  background-color: #ccc;
+}
+
+/* 4. <p> прямі діти <div> напівжирні */
+div > p {
+  font-weight: bold;
+}
+
+/* 5. href починається з https зелені */
+a[href^="https"] {
+  color: green;
+}
+
+/* 6. input type=text синя рамка */
+input[type="text"] {
+  border: 1px solid blue;
+}
+
+/* 7. li перший або останній — шрифт 24px */
+li:first-child,
+li:last-child {
+  font-size: 24px;
+}
+
+/* 8. p нащадки div — шрифт 16px */
+div p {
+  font-size: 16px;
+}
+
+/* 9. input checked — світло-блакитний фон */
+input:checked {
+  background-color: lightblue;
+}
+
+/* 10. <a> прямі діти <li> підкреслені */
+li > a {
+  text-decoration: underline;
+}
+
+/* 11. li парні — жирні */
+li:nth-child(even) {
+  font-weight: bold;
+}
+
+/* 12. input type=text і не disabled — сірий фон */
+input[type="text"]:not([disabled]) {
+  background-color: #eee;
+}
+
+/* 13. p перші діти батька — шрифт 24px */
+p:first-child {
+  font-size: 24px;
+}
+
+/* 14. li після .special — перечеркнутий */
+.special + li {
+  text-decoration: line-through;
+}
+
+/* 15. Перша літера кожного <p> велика */
+p::first-letter {
+  font-size: 36px;
+}
+
+/* 16. ::after для <a> ↗ */
+a::after {
+  content: " ↗";
+}
